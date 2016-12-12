@@ -12,3 +12,7 @@ export const APP_ROUTES = [
     { path: 'signin', component: SigninComponent },
     { path: 'protected', component: ProtectedComponent, canActivate: [AuthGuard] },
 ];
+
+// This works as it is, but there are other ways of accomplishing the same
+// The following is the SOP for bootstrapping routes, the const above would not be exported until the following line:
+// export const routing = RouterModule.forRoot(APP_ROUTES);
